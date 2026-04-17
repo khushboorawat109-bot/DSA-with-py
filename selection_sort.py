@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def SelectionSort(a):
     n=len(a)
     for i in range(n):
@@ -10,3 +11,17 @@ def SelectionSort(a):
 a=[64,25,32,20,40,15]
 SelectionSort(a)
 print(a)                
+=======
+def SelectionSort(a):
+    n=len(a)
+    for i in range(n):
+        min=i
+        for j in range(i,n):
+            if(a[min] > a[j]):
+                min=j
+        a[i], a[min]=a[min],a[i]
+
+a=[64,25,32,20,40,15]
+SelectionSort(a)
+print(a)                
+>>>>>>> 8afebed376519e1884e22e7122f660b0a548d3f4
